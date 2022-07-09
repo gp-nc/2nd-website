@@ -1,0 +1,25 @@
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: EduSABeginner;
+    src: url(./fonts/EduSABeginner-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Gulzar;
+    src: url(./fonts/Gulzar-Regular.ttf);
+}
+
+@font-face {
+    font-family: Splash;
+    src: url(./fonts/Splash-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
