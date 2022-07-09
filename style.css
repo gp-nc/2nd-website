@@ -1,25 +1,255 @@
-@font-face {
-    font-family: BebasNeue-Regular;
-    src: url(./fonts/BebasNeue-Regular.ttf);
+            @font-face {
+                font-family: BebasNeue-Regular;
+                src: url(./fonts/BebasNeue-Regular.ttf);
+            }
+            
+            @font-face {
+                font-family: EduSABeginner;
+                src: url(./fonts/EduSABeginner-VariableFont_wght.ttf);
+            }
+            
+            @font-face {
+                font-family: Gulzar;
+                src: url(./fonts/Gulzar-Regular.ttf);
+            }
+            
+            @font-face {
+                font-family: Splash;
+                src: url(./fonts/Splash-Regular.ttf);
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+             :root {
+                --maincolor: #124E78;
+                --divcolor: #F0F0C9;
+                --divcolortwo: #6E0E0A;
+                ---seccondcolor: #F2BB05;
+                ---thirdcolor: #D74E09;
+            }
+            
+            body {
+                background-color: var(--maincolor);
+            }
+            
+            .nav-bar {
+                background-color: var(---seccondcolor);
+                display: flex;
+                font-size: 2rem;
+                font-family: Gulzar;
+                border: solid 3px black;
+                height: 6rem;
+                border-bottom: 5px solid black;
+                z-index: 1;
+            }
+            
+            ul {
+                display: flex;
+                list-style: none;
+                column-gap: 7rem;
+                padding-left: 20rem;
+            }
+            
+            li {
+                border: solid 2px black;
+                width: 150px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                box-sizing: content-box;
+                text-align: center;
+                margin-top: 7px;
+                padding-bottom: 20px;
+                overflow: visible;
+                -webkit-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+            }
+            
+            .nav-bar:hover {
+                transform: scale(1.01);
+                background-color: white;
+                -webkit-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+            }
+            
+            li:hover {
+                transform: scale(1.1);
+                background-color: var(---seccondcolor);
+                transition-duration: 0.5s;
+            }
+            
+            .first-page-look {
+                background: url(./images/movie-background.webp);
+                height: 43rem;
+                width: 100%;
+                background-size: cover;
+                border: 4px solid black;
+                border-right: solid black 10px;
+                border-left: solid black 10px;
+                position: absolute;
+            }
+            
+            .first-page-look:hover {
+                transform: scale(1.01);
+                background-image: url("./images/movie-background.webp"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                background-blend-mode: overlay;
+            }
+            
+            a {
+                text-decoration: none;
+                font-family: Splash;
+                font-size: 1.2rem;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            
+            #main-page-button {
+                background-color: #6E0E0A;
+                position: absolute;
+                bottom: 10px;
+                font-size: 1rem;
+                width: 12rem;
+                height: 3rem;
+                margin-bottom: 4rem;
+                margin-left: 2rem;
+                color: white;
+                -webkit-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+            }
+            
+            #main-page-button:hover {
+                transform: scale(1.1);
+                background-color: black;
+            }
+            
+            .main-page-par {
+                font: BebasNeue-Regular;
+                color: white;
+                position: absolute;
+                bottom: 200px;
+                margin-left: 3rem;
+                font-size: 1.5rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 20px;
+                -webkit-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+            }
+            
+            .main-page-par:hover {
+                transform: scale(1.1);
+            }
+            
+            #our-part-but {
+                background-color: #6E0E0A;
+                position: absolute;
+                bottom: 10px;
+                font-size: 1rem;
+                width: 12rem;
+                height: 3rem;
+                margin-bottom: 4rem;
+                margin-left: 15rem;
+                color: white;
+                -webkit-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 8px 13px 18px 5px rgba(0, 0, 0, 0.75);
+            }
+            
+            #our-part-but:hover {
+                transform: scale(1.1);
+                background-color: black;
+            }
+            /* .movies {
+    background-color: lightblue;
+    border: 1px solid black;
+    background-color: lightblue;
+    border: 1px solid black;
+    height: 15rem;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    /* width: 100%;
+    overflow-x: scroll;
+    /* display: flex; */
+            /* }
+
+.sinmovie {
+    height: 10rem;
+    width: 15rem;
 }
 
-@font-face {
-    font-family: EduSABeginner;
-    src: url(./fonts/EduSABeginner-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Gulzar;
-    src: url(./fonts/Gulzar-Regular.ttf);
-}
-
-@font-face {
-    font-family: Splash;
-    src: url(./fonts/Splash-Regular.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
+.movies-div {
+    position: absolute;
+    margin-top: 45rem;
+    height: 3rem;
+    flex-shrink: 0;
     box-sizing: border-box;
-}
+    padding: 10px;
+    scroll-snap-align: start;
+} */
+            
+            .movies-div {
+                position: absolute;
+                bottom: 1px;
+                margin-top: 4rem;
+                top: 800px;
+            }
+            
+            .moveisdircect:hover {
+                transform: scale(1.1);
+            }
+            
+            .movies-heading {
+                margin-left: 1rem;
+                border: solid black 2.5px;
+                width: 14rem;
+                background-color: var(--divcolortwo);
+                -webkit-box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                Copy Text
+            }
+            
+            .movies-heading:hover {
+                transform: scale(1.1);
+                background-color: var(---thirdcolor);
+                -webkit-box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                box-shadow: 18px 21px 5px -8px rgba(0, 0, 0, 0.75);
+                Copy Text
+            }
+            
+            .end {
+                position: absolute;
+                bottom: 2px;
+                width: 100%;
+                height: 25rem;
+                background-color: var(---thirdcolor);
+                top: 77rem;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            .end-credits {
+                margin-left: 2rem;
+                padding-bottom: 3rem;
+                letter-spacing: 4px;
+            }
+            
+            .end-credits:hover {
+                color: white;
+                transform: scale(0.9);
+            }
+            
+            a:visited {
+                color: aqua;
+            }

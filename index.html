@@ -8,6 +8,7 @@
     <title>website</title>
     <link rel="stylesheet" href="./style.css">
 
+
 </head>
 
 
@@ -15,6 +16,125 @@
 
 <body>
 
+    <div class="nav-bar">
+        <ul>
+            <li><a target="_blank" href="/index.html" class="top-button">Home</a></li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Cinema" class="top-button">About Us</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=Z2iq99jiS1I" class="top-button">Other</a></li>
+        </ul>
+
+    </div>
+
+    <div class="first-page-look">
+
+        <p class="main-page-par">
+            We are the home of movies! Come to our cenima today! we have many things to choose from!
+        </p>
+
+        <button id="main-page-button"><a target="_blank"  style="color: white;" href="https://www.sidewalkfest.com/cinema/">Go See A Movie</a></button>
+
+        <button id="our-part-but" ;><a target="_blank"  style="color: white;" href="https://plarium.com/landings/en/desktop/raid/dragon_fire_f038_fdb_droapp?plid=150483&pxl=google_search&publisherid=raid%20shadow%20legends_kwd-828443951496_99880212182&placement=442060718535_99880212182&adpartnerset=99880212182&gclid=CjwKCAjwq5-WBhB7EiwAl-HEkpHibT4DeLj0iD2heLgK77Wm1qpXcdB3Nv06JyAAcko2bshbw9Kg2hoCFiEQAvD_BwE">Our partner!</a></button>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <!-- 
+    <div class="movies-div">
+
+        <h1 class="movies-heading">Movies preview</h1>
+        <div class="movies">
+            <img class="sinmovie" src="./movies/large-movie1.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie2.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie3.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie5.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie6.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie8.jpg" alt="">
+            <img class="sinmovie" src="/movies/large-movie7.jpg" alt="">
+
+        </div>
+    </div> -->
+
+    <style>
+        .movies {
+            width: 1255px;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .movies>div {
+            width: 200px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            padding: 10px;
+            scroll-snap-align: start;
+        }
+        
+        .movies>div img {
+            width: 100%;
+        }
+    </style>
+    <div class="movies-div">
+        <h1 class="movies-heading">Movies preview</h1>
+
+        <br>
+
+        <div class="movies">
+            <div>
+                <img class="moveisdircect" src="https://www.themoviedb.org/t/p/w220_and_h330_face/cpWUtkcgRKeauhTyVMjYHxAutp4.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie1.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie2.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie3.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie4.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie5.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie6.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie7.jpg" alt="">
+            </div>
+            <div>
+                <img class="moveisdircect" src="/movies/large-movie8.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="end">
+        <h1 class="end-credits">
+            <a target="_blank" href="https://my.wlu.edu/general-counsel/answer-center/copyright-and-intellectual-property/copyright-guidelines-for-showing-movies-and-other-audiovisual-works">Copyright</a></h1>
+        <h1 class="end-credits">
+            <a target="_blank" href="https://plarium.com/landings/en/desktop/raid/download_mobile_portal_droapp?plid=150483&pxl=google_search&publisherid=raid%20shadow%20legends_kwd-828443951496_99880212182&placement=467326119110_99880212182&adpartnerset=99880212182&gclid=Cj0KCQjwzqSWBhDPARIsAK38LY8lxD_ORQbDQBzWaFFQf60lH6VsruMXpe1KLacqWCdwQqJH4Ksu8TMaApfdEALw_wcB">Sponsor</a></h1>
+        <h1 class="end-credits">
+            <a target="_blank" href="https://twitter.com/funnytweetsfilm">Twitter</a></h1>
+        <h1 class="end-credits">
+            <a target="_blank" href="https://www.instagram.com/funnycinemaa/">Instagram</a></h1>
+
+
+        <h1 style="padding-bottom: 0;" class="end-credits">
+            <a target="_blank" href="https://www.youtube.com/watch?v=_cd4vXLk_Yc">Special thanks</a></h1>
+    </div>
 
 </body>
 
